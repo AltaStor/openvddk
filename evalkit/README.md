@@ -72,6 +72,9 @@ Check the kit before use: `sha256sum -c SHA256SUMS`.
 - vSphere 6.7 Update 3, 7.0.3, 8.0.3 and 9.1.1; Linux x86-64 with glibc 2.28 or
   newer. The
   library depends on nothing but glibc.
+  (9.1.1 was tested after 0.7.4 was released. The copy of this README
+  inside the 0.7.4 download lists the three earlier versions. Released
+  files are not changed, so their checksums stay valid.)
 - **vCenter or an ESXi host.** From 0.7.4 the application may sign in to
   an ESXi host itself, for example a standalone host that no vCenter
   manages, and read over NBDSSL and NBD as VMware's library does. On such a

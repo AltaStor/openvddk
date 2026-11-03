@@ -36,6 +36,9 @@ problems" below).
   vCenter and by signing in to an ESXi host directly, including a
   standalone host without vCenter
   ([docs/COMPATIBILITY-MATRIX.md](docs/COMPATIBILITY-MATRIX.md)).
+  The README inside the 0.7.4 download predates the 9.1.1 tests and lists
+  6.7, 7.0 and 8.0. Released files are not changed, so their published
+  checksums stay valid.
 - Transports HotAdd, NBDSSL and NBD, listed as `hotadd:nbdssl:nbd`
   (D-0039). HotAdd is used through vCenter.
 - Linux x86-64 with glibc 2.28 or newer.
