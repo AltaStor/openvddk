@@ -160,6 +160,13 @@ deliberate and has a reason.
   under `/tmp/vmware-root/` behind, after which its next run used NBD
   without being asked. OpenVDDK opened and read the disk on the same
   worker.
+- **A worker on a stock AlmaLinux 9 install.** VMware's library loads its
+  transport plugin (`libdiskLibPlugin.so`), which needs `libcrypt.so.1`.
+  AlmaLinux 9 (like RHEL 9) ships that file only in the optional
+  `libxcrypt-compat` package. Without it every `Open` with VMware's library
+  fails, on every transport, with VixError 16053 ("One or more required
+  subsystems failed to initialize"); the missing file is named only in the
+  library's log. OpenVDDK needs no extra package on the same worker.
 - **A source disk that shares an LVM volume with the worker** (both made
   from one template) is reported at `Open` with a warning that names the
   volume and the remedy (see "A restart with a disk attached" in
