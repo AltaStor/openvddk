@@ -51,7 +51,10 @@ problems" below).
 How to install and run the library is described in the user guide,
 [evalkit/README.md](evalkit/README.md); the developer guide is
 [devkit/GUIDE.md](devkit/GUIDE.md); the recovery and diagnostic program
-`openvddk-admin` is described in [docs/ADMIN.md](docs/ADMIN.md).
+`openvddk-admin` is described in [docs/ADMIN.md](docs/ADMIN.md). For large
+disks over NBDSSL and NBD (several NFC sessions per disk, larger buffers, and
+how many disks a host serves at once), see
+[docs/TUNING.md](docs/TUNING.md).
 
 ## Build and test
 
