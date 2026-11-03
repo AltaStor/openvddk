@@ -24,6 +24,7 @@ line (`release/hotadd`, 0.6.x) is retired (D-0044).
 
 | vSphere | Builds tested | HotAdd | NBDSSL | NBD | Reference |
 |---|---|---|---|---|---|
+| 9.1.1 | vCenter b25712839, ESXi b25714478 | verified through vCenter: changed blocks (CBT) and whole disks read the same bytes as VDDK 8.0.3 (2026-11-02) | verified, through vCenter and directly on a standalone ESXi host (same check) | verified (same check) | VDDK 8.0.3 |
 | 8.0.3 | vCenter b25600417, ESXi b25595708 | verified (the ENV-80 rows of HOTADD-QUALIFICATION) | verified (NBD-0006, NBD-0007) | verified (NBD-0006, NBD-0007) | VDDK 8.0.3 |
 | 7.0.3 | vCenter b20990077 with ESXi b20328353; vCenter b19234570 with ESXi 7.0 U3c b19193900 | verified (the ENV-70A and ENV-70B rows of HOTADD-QUALIFICATION; HOTADD-0047 to -0051) | verified (NBD-0001 to -0004, -0009 to -0013) | verified (same) | VDDK 8.0.3 |
 | 6.7 Update 3 | vCenter b17137327 and b16046713 with ESXi b14320388 | verified (HOTADD-0045 to -0047) | verified (NBD-0005, -0008, -0010, -0011) | verified (same) | VDDK 8.0.3 since 2026-10-26 (D-0046; virt-v2v and HotAdd failed-Open rechecked, NBD-0029); VDDK 7.0.3 before |
