@@ -69,7 +69,7 @@ Check the kit before use: `sha256sum -c SHA256SUMS`.
   does, and gives the same answer: on VMFS only the areas in use, on NFS the
   whole disk. When the host cannot be reached it answers from vCenter's map
   (see `KNOWN-DIFFERENCES`).
-- vSphere 6.7 Update 3, 7.0.3 and 8.0.3; Linux x86-64 with glibc 2.28 or
+- vSphere 6.7 Update 3, 7.0.3, 8.0.3 and 9.1.1; Linux x86-64 with glibc 2.28 or
   newer. The
   library depends on nothing but glibc.
 - **vCenter or an ESXi host.** From 0.7.4 the application may sign in to
