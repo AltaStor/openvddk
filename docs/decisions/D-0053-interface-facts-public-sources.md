@@ -54,3 +54,22 @@ No header text, code or comment was reproduced. Nothing was decompiled or disass
    required no account. The terms that came with them are VMware's General Terms of 22 November 2023, shipped in the
    8.0.3 package as `doc/vmware-general-terms.pdf`. Their section 4.2 excludes publicly available information from
    the confidentiality duty.
+
+## Sources (checked 2026-11-11; every link answered)
+
+- Broadcom's open-vm-tools, LGPL-2.1, pinned at commit `1634dfb42f72` (2026-05-14). The first file is the same header
+  that carries the "VMware Confidential" marking in VDDK's package; here Broadcom publishes it as open source.
+  - `vm_basic_types.h`: https://github.com/vmware/open-vm-tools/blob/1634dfb42f72/open-vm-tools/lib/include/vm_basic_types.h
+  - `vix.h` (every VIX error code and its value): https://github.com/vmware/open-vm-tools/blob/1634dfb42f72/open-vm-tools/lib/include/vix.h
+- nbdkit's VDDK plugin (`vddk-structs.h`, `vddk-stubs.h`), pinned at commit `0614f1789913`:
+  https://gitlab.com/nbdkit/nbdkit/-/tree/0614f1789913/plugins/vddk
+- VMware's *VDDK Programming Guide* for 8.0.3, as archived by the Internet Archive:
+  https://web.archive.org/web/20241219223812/https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vddk-803-programming-guide.pdf
+- VMware's VIX API 1.12 error-code reference, as archived:
+  https://web.archive.org/web/20140126070219/https://www.vmware.com/support/developer/vix-api/vix112_reference/errors/errors.html
+- VMware's *NAS VAAI Development Kit 7.0.1* API reference, as posted publicly by NetApp:
+  https://opensource.netapp.com/NetApp_NFS_Plug-in_for_VMware_VAAI/2.0.1/rpmextract/nvdk-7.0.1-16850804/docs/html/distribute__vixDiskLib_8h.html
+- The API reference VMware ships with VDDK: the `doc/` folder of `VMware-vix-disklib-8.0.3-23950268.x86_64.tar.gz`.
+- The terms that came with the reference package: VMware General Terms, version of 22 November 2023, in the same
+  package as `doc/vmware-general-terms.pdf`. Section 4.2 (Exceptions) says the confidentiality duty does not apply to
+  information that "becomes publicly available through no fault of Recipient".

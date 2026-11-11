@@ -30,7 +30,7 @@ material is incorporated.
 | VDDK's shipped API reference and VMware's *Virtual Disk Development Kit (VDDK) Programming Guide* (Broadcom's documentation site no longer has the 7.0 and 8.0 editions — techdocs.broadcom.com returns 404 since August 2026 — while its developer portal still serves the 6.0 edition, which documents the same configuration settings; dated copies of the 8.0.2 and 7.0 U3 editions, as captured by the Internet Archive while public, are kept privately) | official public documentation | function semantics, configuration settings (LOG-0001) |
 | Notes of an earlier, separate implementation attempt | prior notes | orientation only, recorded as unverified leads (the notes of an earlier attempt, kept privately); no code read or taken |
 
-Until 2026-11-11 the first row above named VDDK 8.0.3's own header files (`vixDiskLib.h`, `vm_basic_types.h`) as the source of the interface facts. A review that day found every such fact OpenVDDK uses in the public sources the row now names. The header text was never reproduced.
+Until 2026-11-11 the first row above named VDDK 8.0.3's own header files (`vixDiskLib.h`, `vm_basic_types.h`) as the source of the interface facts. A review that day found every such fact OpenVDDK uses in the public sources the row now names. The header text was never reproduced. Of those two headers, `vm_basic_types.h` carries a "VMware Confidential" marking in VDDK's package; Broadcom publishes the same header as open source (LGPL-2.1) in open-vm-tools. D-0053 links every source and quotes the terms shipped with the reference package.
 
 ## Reference inputs
 
