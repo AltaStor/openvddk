@@ -8,6 +8,13 @@ VixDiskLib, such as nbdkit's VDDK plugin and virt-v2v, load it in place of
 VMware's library without source changes. It reads disks; writing is
 unsupported by design.
 
+> [!NOTE]
+> **From the author of OpenVDDK:** V2K Migrate, a free tool that moves
+> VMware VMs to Apache CloudStack and Proxmox VE and reads their disks
+> with OpenVDDK, is available as a beta download. What it does:
+> [v2kmigrate.com](https://v2kmigrate.com/). Download:
+> [get.v2kmigrate.com/beta7](https://get.v2kmigrate.com/beta7).
+
 It was written from public documentation, the facts any program needs to
 link against the library, and observation of what VMware's library visibly
 does when it runs. It contains no VMware code. How each behaviour was
