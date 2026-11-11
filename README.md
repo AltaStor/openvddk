@@ -11,9 +11,10 @@ unsupported by design.
 > [!NOTE]
 > **From the author of OpenVDDK:** V2K Migrate, a free tool that moves
 > VMware VMs to Apache CloudStack and Proxmox VE and reads their disks
-> with OpenVDDK, is available as a beta download. What it does:
-> [v2kmigrate.com](https://v2kmigrate.com/). Download:
-> [get.v2kmigrate.com/beta7](https://get.v2kmigrate.com/beta7).
+> with OpenVDDK, is available as a beta. What it does:
+> [v2kmigrate.com](https://v2kmigrate.com/). To get it,
+> [sign up](https://v2kmigrate.com/#waitlist): the download link and how
+> to report issues come by email.
 
 It was written from public documentation, the facts any program needs to
 link against the library, and observation of what VMware's library visibly
